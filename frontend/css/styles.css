@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; }
+
+.header {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+  .header__buttons {
+    display: flex;
+    gap: 10px; }
+  .header .btn {
+    background: #28A745;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px; }
+
+.main {
+  display: flex; }
+  .main .task-sidebar {
+    width: 20%;
+    background: #FFFFFF;
+    padding: 1rem; }
+  .main .task-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem; }
+    .main .task-container .task-column {
+      width: 30%;
+      background: #FFFFFF;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+.footer {
+  background: #343A40;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem; }
+
+
+/*# sourceMappingURL=styles.css.map */

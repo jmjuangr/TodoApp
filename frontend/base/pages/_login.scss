@@ -1,0 +1,115 @@
+// Variables
+$primary-color: #007BFF;
+$secondary-color: #FFFFFF;
+$tertiary-color: #343A40;
+$success-color: #28A745;
+$error-color: #DC3545;
+
+// Global Styles
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+// Header
+.header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        background: $success-color;
+        color: $secondary-color;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+// Main Layout
+.main {
+    display: flex;
+    
+    .task-sidebar {
+        width: 20%;
+        background: $secondary-color;
+        padding: 1rem;
+    }
+    
+    .task-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+
+        .task-column {
+            width: 30%;
+            background: $secondary-color;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+// Footer
+.footer {
+    background: $tertiary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}

@@ -1,0 +1,102 @@
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\appsettings.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\AporopoApp_API.exe
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\AporopoApp_API.deps.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\AporopoApp_API.runtimeconfig.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.csproj.AssemblyReference.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.AssemblyInfoInputs.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.AssemblyInfo.cs
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.csproj.CoreCompileInputs.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets\msbuild.AporopoApp_API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets\msbuild.build.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\scopedcss\bundle\AporopoApp_API.styles.css
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoA.70B2D5DD.Up2Date
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\refint\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.genruntimeconfig.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\ref\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp_API\obj\Debug\net8.0\AporopoApp_API.sourcelink.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\appsettings.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.exe
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.deps.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.runtimeconfig.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.csproj.AssemblyReference.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.AssemblyInfoInputs.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.AssemblyInfo.cs
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.csproj.CoreCompileInputs.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.sourcelink.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.AporopoApp_API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AporopoApp_API.props
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\scopedcss\bundle\AporopoApp_API.styles.css
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoA.70B2D5DD.Up2Date
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\refint\AporopoApp_API.dll
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.genruntimeconfig.cache
+C:\Users\Jose M\Documents\DAW\SAN VALERO\Práctica presencial\AporopoApp\backend\obj\Debug\net8.0\ref\AporopoApp_API.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\appsettings.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.exe
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.deps.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.runtimeconfig.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.csproj.AssemblyReference.cache
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.AssemblyInfoInputs.cache
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.AssemblyInfo.cs
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.csproj.CoreCompileInputs.cache
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.sourcelink.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.AporopoApp_API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.AporopoApp_API.props
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AporopoApp_API.props
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AporopoApp_API.props
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\scopedcss\bundle\AporopoApp_API.styles.css
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoA.70B2D5DD.Up2Date
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\refint\AporopoApp_API.dll
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.pdb
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\AporopoApp_API.genruntimeconfig.cache
+C:\Users\juane\OneDrive\Escritorio\AporopoApp\backend\obj\Debug\net8.0\ref\AporopoApp_API.dll

@@ -1,0 +1,4 @@
+1|Juan|1234
+2|jmjuan|12345
+3|manuel|123
+4|Admin|admin

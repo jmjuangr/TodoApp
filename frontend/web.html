@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AporopoApp - Gestor de Tareas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">AporopoApp</h1>
+        <div class="header__buttons">
+            <span id="lastUserName"></span>
+            <a href="login.html" class="btn">Cerrar sesión</a>
+        </div>
+    </header>
+    
+    <main class="main">
+        <aside class="task-sidebar">
+            <h2>Registro de Tareas</h2>
+            <form id="taskForm">
+                <input type="text" id="taskTitle" placeholder="Título de la tarea" required>
+                <textarea id="taskDescription" placeholder="Descripción"></textarea>
+                <input type="date" id="taskDate" required>
+                <select id="taskPriority">
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </aside>
+        
+        <section class="task-container">
+            <div class="task-column" id="highPriority" data-priority="Alta">
+                <h2>Prioridad Alta</h2>
+            </div>
+            <div class="task-column" id="mediumPriority" data-priority="Media">
+                <h2>Prioridad Media</h2>
+            </div>
+            <div class="task-column" id="lowPriority" data-priority="Baja">
+                <h2>Prioridad Baja</h2>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Creado por JuanEF y JoseMJG</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
