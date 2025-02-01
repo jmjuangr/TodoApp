@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             try {
-                // 🔹 Cambiar el método de "GET" a "POST"
+               
                 const response = await fetch("http://localhost:5175/api/usuarios/login", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ nombreUsuario: username, password }) // Enviar JSON válido
+                    body: JSON.stringify({ nombreUsuario: username, password }) 
                 });
 
                 if (!response.ok) throw new Error("Usuario o contraseña incorrectos");
 
                 const userData = await response.json();
-                localStorage.setItem("user", JSON.stringify(userData)); // Guardar sesión en localStorage
-                window.location.href = "web.html"; // 🔹 Redirigir a la página correcta
+                localStorage.setItem("user", JSON.stringify(userData)); 
+                window.location.href = "web.html"; 
                 localStorage.setItem("lastUser", userData.nombreUsuario);
                 
             } catch (error) {

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 alert("Registro exitoso. Ahora puedes iniciar sesión.");
-                window.location.href = "login.html"; // Redirige al login
+                window.location.href = "login.html"; 
 
             } catch (error) {
                 registerError.textContent = error.message;

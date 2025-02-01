@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Manejo de drag & drop en las columnas
     document.querySelectorAll(".task-column").forEach((column) => {
         column.addEventListener("dragover", (event) => {
-            event.preventDefault(); // Permitir soltar
+            event.preventDefault(); // Permite soltar
         });
     
         column.addEventListener("drop", async (event) => {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const nuevaPrioridad = column.dataset.priority;
                 task.prioridad = nuevaPrioridad;
         
-                // 🔹 Actualizar la interfaz de usuario
+                // Actualizar la interfaz de usuario
                 taskCard.querySelector(".task-title").textContent = task.titulo;
                 taskCard.querySelector(".task-details p:nth-child(1)").innerHTML = `<strong>Descripción:</strong> ${task.descripcion}`;
                 taskCard.querySelector(".task-details p:nth-child(2)").innerHTML = `<strong>Fecha límite:</strong>${task.fecha.split('T')[0]}`;
@@ -106,19 +106,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     
-    // 🔹 Función para actualizar la prioridad en la API
+    // Función para actualizar la prioridad en la API
     async function updateTask(task) {
         try {
             const response = await fetch(`${API_URL}/${task.tareaId}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(task) // Enviamos toda la tarea actualizada
+                body: JSON.stringify(task) 
             });
     
             if (!response.ok) throw new Error("Error al actualizar la tarea");
-            console.log(`✅ Tarea ${task.tareaId} actualizada correctamente`);
+            console.log(`Tarea ${task.tareaId} actualizada correctamente`);
         } catch (error) {
-            console.error("⚠️ Error al actualizar la tarea:", error);
+            console.error("Error al actualizar la tarea:", error);
         }
     }
     taskForm.addEventListener("submit", async (event) => {
@@ -163,20 +163,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function editTask(task) {
-        // Selecciona el modal y el formulario del modal
+        
         const modal = document.querySelector('#editModal');
         const form = document.querySelector('#editTaskForm');
       
-        // Completa los campos del modal con los datos actuales de la tarea
+        
         document.querySelector('#editTaskTitle').value = task.titulo;
         document.querySelector('#editTaskDescription').value = task.descripcion;
         document.querySelector('#editTaskDate').value = task.fecha.split('T');
         document.querySelector('#editTaskPriority').value = task.prioridad;
       
-        // Muestra el modal (por ejemplo, agregando una clase que lo haga visible)
+        
         modal.classList.add('modal-show');
       
-        // Función para cerrar el modal
+       
         const closeModal = () => {
           modal.classList.remove('modal-show');
           form.onsubmit = null;
@@ -184,20 +184,20 @@ document.addEventListener("DOMContentLoaded", () => {
           window.onclick = null;
         };
       
-        // Manejar el evento de envío del formulario
+        
         form.onsubmit = async (e) => {
-          e.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+          e.preventDefault(); 
       
-          // Obtén los nuevos valores ingresados por el usuario
+         
           const newTitle = document.querySelector('#editTaskTitle').value;
           const newDescription = document.querySelector('#editTaskDescription').value;
           const newDate = document.querySelector('#editTaskDate').value;
           const newPriority = document.querySelector('#editTaskPriority').value;
       
-          // Validar que los campos esenciales no estén vacíos
+         
           if (!newTitle || !newDescription || !newDate) return;
       
-          // Crea un objeto con la tarea actualizada
+          
           const updatedTask = {
             ...task,
             titulo: newTitle,
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             if (!response.ok) throw new Error("Error al actualizar la tarea");
       
-            // Actualiza la interfaz (DOM) con los nuevos valores
+            
             const taskElement = document.querySelector(`[data-id='${task.tareaId}']`);
             if (taskElement) {
               taskElement.querySelector('.task-title').textContent = newTitle;
@@ -225,15 +225,15 @@ document.addEventListener("DOMContentLoaded", () => {
           } catch (error) {
             console.error(error);
           } finally {
-            // Cierra el modal una vez completada la operación
+            
             closeModal();
           }
         };
       
-        // Configura el botón de cerrar (la "x" en el modal)
+        
         document.querySelector('#editModal .close').onclick = closeModal;
       
-        // Opcional: cerrar el modal si el usuario hace clic fuera del contenido
+        
         window.onclick = function(event) {
           if (event.target === modal) {
             closeModal();
