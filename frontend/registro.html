@@ -8,7 +8,12 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">AporopoApp</h1>
+        <div class="header__logo">
+            <img src="img/logotipo_aporopoApp_transparent.png" alt="AporopoApp">
+        </div>
+        <div class="header__title">
+            <h1>AporopoApp</h1>
+        </div>
         <div class="header__buttons">
             <a href="login.html" class="btn">Iniciar sesión</a>
         </div>
@@ -18,13 +23,13 @@
         <h2>Registro de Usuario</h2>
         <form id="registerForm">
             <label for="username">Nombre de Usuario</label>
-            <input type="text" id="username" name="username" required>
+            <input class=input-register type="text" id="username" name="username" required>
 
             <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
+            <input class=input-register type="password" id="password" name="password" required>
 
             <label for="confirmPassword">Confirmar Contraseña</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input class=input-register type="password" id="confirmPassword" name="confirmPassword" required>
 
             <button type="submit">Registrarse</button>
         </form>

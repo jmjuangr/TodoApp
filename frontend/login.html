@@ -8,17 +8,25 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">AporopoApp</h1>
+        <div class="header__logo">
+            <img src="img/logotipo_aporopoApp_transparent.png" alt="AporopoApp">
+        </div>
+        <div class="header__title">
+            <h1>AporopoApp</h1>
+        </div>
+        <div class="header__buttons">
+            <span></span>
+        </div>
     </header>
 
     <main class="login-container">
         <h2>Iniciar Sesión</h2>
         <form id="loginForm">
             <label for="username">Nombre de Usuario</label>
-            <input type="text" id="username" name="username" required>
+            <input class=input-login type="text" id="username" name="username" required>
 
             <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
+            <input class=input-login type="password" id="password" name="password" required>
 
             <button type="submit">Ingresar</button>
         </form>

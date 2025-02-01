@@ -8,12 +8,18 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">AporopoApp</h1>
+        <div class="header__logo">
+            <img src="img/logotipo_aporopoApp_transparent.png" alt="AporopoApp">
+        </div>
+        <div class="header__title">
+            <h1>AporopoApp</h1>
+        </div>
         <div class="header__buttons">
             <span id="lastUserName"></span>
             <a href="login.html" class="btn">Cerrar sesión</a>
         </div>
     </header>
+    
     
     <main class="main">
         <aside class="task-sidebar">
@@ -42,6 +48,38 @@
                 <h2>Prioridad Baja</h2>
             </div>
         </section>
+
+        <!-- Modal para editar tarea -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Editar Tarea</h2>
+      <form id="editTaskForm">
+        <div>
+          <label for="editTaskTitle">Título:</label>
+          <input class="input-modal" type="text" id="editTaskTitle" required>
+        </div>
+        <div>
+          <label for="editTaskDescription">Descripción:</label>
+          <textarea class="input-modal" id="editTaskDescription" required></textarea>
+        </div>
+        <div>
+          <label for="editTaskDate">Fecha límite:</label>
+          <input class="input-modal"type="date" id="editTaskDate" required>
+        </div>
+        <div>
+          <label for="editTaskPriority">Prioridad:</label>
+          <select class="input-modal" id="editTaskPriority">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+          </select>
+        </div>
+        <button class="input-modal" type="submit">Guardar cambios</button>
+      </form>
+    </div>
+  </div>
+  
     </main>
     
     <footer class="footer">

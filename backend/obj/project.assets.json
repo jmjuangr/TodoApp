@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\juane\\.nuget\\packages\\": {}
+    "C:\\Users\\Jose M\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juane\\OneDrive\\Escritorio\\AporopoApp\\backend\\AporopoApp_API.csproj",
+      "projectUniqueName": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj",
       "projectName": "AporopoApp_API",
-      "projectPath": "C:\\Users\\juane\\OneDrive\\Escritorio\\AporopoApp\\backend\\AporopoApp_API.csproj",
-      "packagesPath": "C:\\Users\\juane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juane\\OneDrive\\Escritorio\\AporopoApp\\backend\\obj\\",
+      "projectPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj",
+      "packagesPath": "C:\\Users\\Jose M\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\juane\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jose M\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -551,7 +551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

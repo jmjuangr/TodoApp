@@ -14,18 +14,44 @@ body {
   }
   
   .header {
-    background-color: #007BFF;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-  }
-  
-  .header__buttons {
+    padding: 16px;
+    background-color: #007BFF;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.header__logo {
     display: flex;
+    align-items: center;
+    flex: 1; 
+    min-width: 150px; 
+}
+
+.header__logo img {
+    max-width: 30%; 
+    height: auto; 
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; 
+    min-width: 200px; 
+    text-align: center;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; 
     gap: 10px;
-  }
+    min-width: 150px; 
+}
+
   
   .header .btn {
     background: #28A745;
@@ -57,7 +83,8 @@ body {
   .main .task-sidebar form textarea,
   .main .task-sidebar form select,
   .main .task-sidebar form button {
-    width: 100%;
+    
+    width: 90%;
     margin-bottom: 1rem; /* Espacio entre los elementos del formulario */
     padding: 0.5rem;
     border: 1px solid #ced4da;
@@ -145,6 +172,52 @@ body {
     margin-top: 0.5rem;
   }
   
+
+  /* Modal oculto por defecto */
+.modal {
+  display: none; /* Oculto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+  
+}
+
+/* Modal visible */
+.modal-show {
+  display: block;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Botón de cerrar */
+.modal-content .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.input-modal {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
   .footer {
     background: #343A40;
     color: #FFFFFF;
