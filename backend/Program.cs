@@ -22,12 +22,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(); // Habilita la UI de Swagger
+    app.UseSwaggerUI(); 
 }
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowAll"); // 🔹 Aplicar CORS
+app.UseCors("AllowAll"); 
 
 app.UseAuthorization();
 

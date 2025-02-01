@@ -17,4 +17,4 @@ COPY --from=build /app/publish .
 
 # Exponer el puerto donde corre la API
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "MiProyecto.dll"]
+ENTRYPOINT ["dotnet", "AporopoApp_API.dll"]
