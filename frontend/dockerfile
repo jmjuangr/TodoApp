@@ -1,0 +1,9 @@
+# Imagen base de Nginx para servir archivos estáticos
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
+
+# Copiar los archivos del frontend al contenedor
+COPY . .
+
+# Exponer el puerto 80 para servir la app
+EXPOSE 80
