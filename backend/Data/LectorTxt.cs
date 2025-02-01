@@ -48,7 +48,7 @@ namespace AporopoApi.Data
                 TareaId = int.Parse(parts[0]),
                 Titulo = parts[1],
                 Descripcion = parts[2],
-                Fecha = DateTime.Parse(parts[3]),
+                 Fecha = DateTime.ParseExact(parts[3], "yyyy-MM-dd", null),
                 Estado = bool.Parse(parts[4]),
                 Prioridad = parts[5],
             };
@@ -57,7 +57,7 @@ namespace AporopoApi.Data
         // Convierte un objeto TareaItem en una línea de texto
         private static string TareaLinea(TareaItem tarea)
         {
-            return $"{tarea.TareaId}|{tarea.Titulo}|{tarea.Descripcion}|{tarea.Fecha:yyyy-MM-ddTHH:mm:ss}|{tarea.Estado}|{tarea.Prioridad}";
+            return $"{tarea.TareaId}|{tarea.Titulo}|{tarea.Descripcion}|{tarea.Fecha:yyyy-MM-dd}|{tarea.Estado}|{tarea.Prioridad}";
         }
 
         // Leer todos los usuarios

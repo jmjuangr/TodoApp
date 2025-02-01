@@ -39,12 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         taskCard.innerHTML = `
             <strong class="task-title">${task.titulo}</strong>
             <div class="task-actions">
-                <button class="edit-task">Editar</button>
-                <button class="delete-task">Eliminar</button>
+                <button class="edit-task">Editar<img class=button-icon src=img/editar.svg></button>
+                <button class="delete-task">Eliminar<img class=button-icon src=img/borrar.svg></button>
             </div>
             <div class="task-details hidden">
                 <p><strong>Descripción:</strong> ${task.descripcion}</p>
-                <p><strong>Fecha límite:</strong> ${task.fecha}</p>
+                <p><strong>Fecha límite:</strong> ${task.fecha.split('T')[0]}</p>
+               
             </div>
         `;
     
@@ -98,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // 🔹 Actualizar la interfaz de usuario
                 taskCard.querySelector(".task-title").textContent = task.titulo;
                 taskCard.querySelector(".task-details p:nth-child(1)").innerHTML = `<strong>Descripción:</strong> ${task.descripcion}`;
-                taskCard.querySelector(".task-details p:nth-child(2)").innerHTML = `<strong>Fecha límite:</strong> ${task.fecha}`;
+                taskCard.querySelector(".task-details p:nth-child(2)").innerHTML = `<strong>Fecha límite:</strong>${task.fecha.split('T')[0]}`;
         
                 await updateTask(task);
             }
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     taskForm.addEventListener("submit", async (event) => {
         event.preventDefault();
-        const fechaValue = taskDate.value ? `${taskDate.value}T00:00:00` : new Date().toISOString();
+        const fechaValue = taskDate.value ? `${taskDate.value}` : new Date().toISOString();
       
 
 
@@ -169,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Completa los campos del modal con los datos actuales de la tarea
         document.querySelector('#editTaskTitle').value = task.titulo;
         document.querySelector('#editTaskDescription').value = task.descripcion;
-        document.querySelector('#editTaskDate').value = task.fecha;
+        document.querySelector('#editTaskDate').value = task.fecha.split('T');
         document.querySelector('#editTaskPriority').value = task.prioridad;
       
         // Muestra el modal (por ejemplo, agregando una clase que lo haga visible)

@@ -32,12 +32,12 @@ namespace GestorTareasAPI.Controllers
                 var tasks = TxtProcesador.LeerTareas();
                 TareaItem task = null;
 
-                foreach (var t in tasks) // Recorremos la lista manualmente
+                foreach (var t in tasks) 
                 {
                     if (t.TareaId == id)
                     {
                         task = t;
-                        break; // Detenemos el bucle al encontrar la tarea
+                        break; 
                     }
                 }
 
@@ -66,19 +66,19 @@ namespace GestorTareasAPI.Controllers
 
                 var tasks = TxtProcesador.LeerTareas();
 
-                // Asignar un nuevo ID manualmente sin usar Max()
-                int newId = 1; // Por defecto, el primer ID será 1
-                if (tasks.Count > 0) // Si hay tareas, buscamos el ID más alto
+                
+                int newId = 1; 
+                if (tasks.Count > 0) 
                 {
                     int maxId = 0;
                     foreach (var t in tasks)
                     {
                         if (t.TareaId > maxId)
                         {
-                            maxId = t.TareaId; // Guardamos el ID más alto encontrado
+                            maxId = t.TareaId; 
                         }
                     }
-                    newId = maxId + 1; // El nuevo ID será el más alto + 1
+                    newId = maxId + 1; 
                 }
 
                 task.TareaId = newId;

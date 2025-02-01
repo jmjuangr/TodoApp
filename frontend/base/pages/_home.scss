@@ -155,6 +155,7 @@ body {
     padding: 0.25rem 0.5rem;
     border: none;
     border-radius: 3px;
+    gap: 10px;
     cursor: pointer;
   }
   
@@ -168,6 +169,10 @@ body {
     color: #fff;
   }
   
+  .button-icon{
+    width:15px;
+    height: auto;
+  }
   .task-card .task-details {
     margin-top: 0.5rem;
   }
@@ -224,3 +229,97 @@ body {
     text-align: center;
     padding: 1rem;
   }
+
+
+
+@media screen and (max-width: 768px) {
+  
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header__logo img {
+    max-width: 20%; 
+  }
+
+  .header__buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .task-sidebar {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .main .task-sidebar form {
+    padding: 10px;
+  }
+
+  /* Formulario dentro del sidebar */
+  .main .task-sidebar form input,
+  .main .task-sidebar form textarea,
+  .main .task-sidebar form select,
+  .main .task-sidebar form button {
+    width: 100%;
+  }
+  .main .task-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .main .task-container .task-column {
+    width: 90%; 
+    margin-bottom: 10px; 
+  }
+
+
+  .task-card {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .task-card .task-title {
+    font-size: 1rem;
+  }
+
+  
+  .task-card .task-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+ 
+  .task-card .task-actions button {
+    width: 90%;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+ 
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 15px;
+  }
+
+  
+  .footer {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+

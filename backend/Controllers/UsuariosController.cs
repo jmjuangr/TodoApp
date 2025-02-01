@@ -37,13 +37,13 @@ namespace GestorTareasAPI.Controllers
                 var users = TxtProcesador.LeerUsuarios();
                 bool usuarioExiste = false;
 
-                // Verificar si el usuario ya existe recorriendo la lista con foreach
+                // Verificar si el usuario ya existe 
                 foreach (var u in users)
                 {
                     if (u.NombreUsuario.ToLower() == newUser.NombreUsuario.ToLower())
                     {
                         usuarioExiste = true;
-                        break; // Si lo encontramos, salimos del bucle
+                        break; 
                     }
                 }
 
@@ -52,19 +52,19 @@ namespace GestorTareasAPI.Controllers
                     return BadRequest("El nombre de usuario ya está en uso.");
                 }
 
-                // Generar un nuevo ID manualmente sin usar Max()
+               
                 int newId = 1;
-                if (users.Count > 0) // Si hay usuarios, buscamos el ID más alto
+                if (users.Count > 0) 
                 {
                     int maxId = 0;
                     foreach (var u in users)
                     {
                         if (u.Id > maxId)
                         {
-                            maxId = u.Id; // Guardamos el ID más alto encontrado
+                            maxId = u.Id; 
                         }
                     }
-                    newId = maxId + 1; // El nuevo ID será el más alto + 1
+                    newId = maxId + 1; 
                 }
 
                 newUser.Id = newId;
@@ -93,14 +93,14 @@ namespace GestorTareasAPI.Controllers
                 var users = TxtProcesador.LeerUsuarios();
                 Usuario user = null;
 
-                // Buscar el usuario manualmente sin FirstOrDefault
+             
                 foreach (var u in users)
                 {
                     if (u.NombreUsuario.ToLower() == loginUser.NombreUsuario.ToLower() &&
                         u.Password == loginUser.Password)
                     {
                         user = u;
-                        break; // Salimos del bucle si encontramos el usuario
+                        break; 
                     }
                 }
 
