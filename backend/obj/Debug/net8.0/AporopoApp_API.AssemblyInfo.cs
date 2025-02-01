@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AporopoApp_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c6977ca56641d11a77a29e854f649447b3cf673")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3bb694f828349f501f76a941224cc9ef2947791")]
 [assembly: System.Reflection.AssemblyProductAttribute("AporopoApp_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AporopoApp_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
