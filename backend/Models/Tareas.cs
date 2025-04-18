@@ -1,8 +1,11 @@
 namespace Models;
+using System.ComponentModel.DataAnnotations;
+
 
 public class TareaItem
-{
-    public int TareaId { get; set; }                
+{[Key]
+public int TareaId { get; set; }
+            
     public string Titulo { get; set; } = "";    
     public string Descripcion { get; set; } = "";
     public DateTime Fecha { get; set; }      

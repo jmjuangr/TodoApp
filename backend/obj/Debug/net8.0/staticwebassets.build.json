@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "YNz5JnrulHlTFMwUAjTxwx0YS5A4owI2kIgzRN2Xfek=",
-  "Source": "AporopoApp_API",
-  "BasePath": "_content/AporopoApp_API",
+  "Hash": "wCSzTssbIthe833JCbVKkcCm9SsUGAzCkMCcsOMjqG4=",
+  "Source": "TodoAppApi",
+  "BasePath": "_content/TodoAppApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

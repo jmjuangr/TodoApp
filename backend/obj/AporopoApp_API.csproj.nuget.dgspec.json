@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj": {}
+    "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Despliegue de aplicaciones web\\TodoApp\\backend\\AporopoApp_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj": {
+    "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Despliegue de aplicaciones web\\TodoApp\\backend\\AporopoApp_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj",
+        "projectUniqueName": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Despliegue de aplicaciones web\\TodoApp\\backend\\AporopoApp_API.csproj",
         "projectName": "AporopoApp_API",
-        "projectPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\AporopoApp_API.csproj",
+        "projectPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Despliegue de aplicaciones web\\TodoApp\\backend\\AporopoApp_API.csproj",
         "packagesPath": "C:\\Users\\Jose M\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Práctica presencial\\AporopoApp\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Jose M\\Documents\\DAW\\SAN VALERO\\Despliegue de aplicaciones web\\TodoApp\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose M\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -46,6 +46,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.efcore.9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

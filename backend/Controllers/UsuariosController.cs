@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using AporopoApi.Data;
+using Microsoft.EntityFrameworkCore;
+using TodoAppApi.Data;
 using Models;
-using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GestorTareasAPI.Controllers
 {
@@ -10,108 +12,69 @@ namespace GestorTareasAPI.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+        private readonly ApplicationDbContext _context;
+
+        public UsuariosController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
-        public ActionResult<IEnumerable<Usuario>> GetUsers()
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsers()
         {
             try
             {
-                var users = TxtProcesador.LeerUsuarios();
-                return Ok(users);
+                return await _context.Usuarios.ToListAsync();
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
-                return StatusCode(500, $"Error al leer los usuarios: {ex.Message}");
+                return StatusCode(500, $"Error al obtener los usuarios: {ex.Message}");
             }
         }
 
         [HttpPost("register")]
-        public ActionResult<Usuario> RegisterUser([FromBody] Usuario newUser)
+        public async Task<ActionResult<Usuario>> RegisterUser([FromBody] Usuario newUser)
         {
             try
             {
                 if (newUser == null || string.IsNullOrWhiteSpace(newUser.NombreUsuario) || string.IsNullOrWhiteSpace(newUser.Password))
-                {
-                    return BadRequest("El nombre de usuario y la contraseña son obligatorios.");
-                }
+                    return BadRequest("Nombre de usuario y contraseña son obligatorios.");
 
-                var users = TxtProcesador.LeerUsuarios();
-                bool usuarioExiste = false;
+                bool existe = await _context.Usuarios.AnyAsync(u =>
+                    u.NombreUsuario.ToLower() == newUser.NombreUsuario.ToLower());
 
-                // Verificar si el usuario ya existe 
-                foreach (var u in users)
-                {
-                    if (u.NombreUsuario.ToLower() == newUser.NombreUsuario.ToLower())
-                    {
-                        usuarioExiste = true;
-                        break; 
-                    }
-                }
-
-                if (usuarioExiste)
-                {
+                if (existe)
                     return BadRequest("El nombre de usuario ya está en uso.");
-                }
 
-               
-                int newId = 1;
-                if (users.Count > 0) 
-                {
-                    int maxId = 0;
-                    foreach (var u in users)
-                    {
-                        if (u.Id > maxId)
-                        {
-                            maxId = u.Id; 
-                        }
-                    }
-                    newId = maxId + 1; 
-                }
-
-                newUser.Id = newId;
-
-                users.Add(newUser);
-                TxtProcesador.CrearUsuarios(users);
+                _context.Usuarios.Add(newUser);
+                await _context.SaveChangesAsync();
 
                 return CreatedAtAction(nameof(GetUsers), new { id = newUser.Id }, newUser);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 return StatusCode(500, $"Error al registrar el usuario: {ex.Message}");
             }
         }
 
         [HttpPost("login")]
-        public ActionResult<Usuario> LoginUser([FromBody] Usuario loginUser)
+        public async Task<ActionResult<Usuario>> LoginUser([FromBody] Usuario loginUser)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(loginUser.NombreUsuario) || string.IsNullOrWhiteSpace(loginUser.Password))
-                {
                     return BadRequest("Usuario y contraseña son obligatorios.");
-                }
 
-                var users = TxtProcesador.LeerUsuarios();
-                Usuario user = null;
-
-             
-                foreach (var u in users)
-                {
-                    if (u.NombreUsuario.ToLower() == loginUser.NombreUsuario.ToLower() &&
-                        u.Password == loginUser.Password)
-                    {
-                        user = u;
-                        break; 
-                    }
-                }
+                var user = await _context.Usuarios.FirstOrDefaultAsync(u =>
+                    u.NombreUsuario.ToLower() == loginUser.NombreUsuario.ToLower()
+                    && u.Password == loginUser.Password);
 
                 if (user == null)
-                {
                     return Unauthorized("Usuario o contraseña incorrectos.");
-                }
 
                 return Ok(user);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 return StatusCode(500, $"Error al iniciar sesión: {ex.Message}");
             }

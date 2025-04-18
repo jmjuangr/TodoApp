@@ -1,3 +1,6 @@
+using Models;
+using Microsoft.EntityFrameworkCore;
+using TodoAppApi.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // 🔹 Agregar Swagger
@@ -14,6 +17,11 @@ builder.Services.AddCors(options =>
                   .AllowAnyHeader();
         });
 });
+
+var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
 
 builder.Services.AddControllers();
 

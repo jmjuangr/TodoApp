@@ -1,3 +1,0 @@
-2|backend|hola|2024-02-15|False|Baja
-3|tarea nueva|ojo que funciona|2025-02-15|False|Media
-4|parece que si hol|muy bien|2025-02-01|False|Alta
