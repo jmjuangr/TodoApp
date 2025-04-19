@@ -18,9 +18,9 @@ builder.Services.AddCors(options =>
         });
 });
 
-var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
+
 
 
 builder.Services.AddControllers();
