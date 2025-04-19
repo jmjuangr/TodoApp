@@ -39,8 +39,6 @@ C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\MySqlConnector.dll
-C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Jose M\Documents\DAW\SAN VALERO\Despliegue de aplicaciones web\TodoApp\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
