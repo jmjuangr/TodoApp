@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             try {
-                const response = await fetch("http://localhost:5175/api/usuarios/register", {
+                const response = await fetch("http://backend:8080/api/usuarios/register", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ nombreUsuario: username, password })

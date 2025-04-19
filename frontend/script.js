@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const API_URL = "http://localhost:5175/api/Tareas";
+    const API_URL = "http://backend:8080/api/Tareas";
     const taskForm = document.getElementById("taskForm");
     const taskTitle = document.getElementById("taskTitle");
     const taskDescription = document.getElementById("taskDescription");

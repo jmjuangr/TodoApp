@@ -2,8 +2,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "5175:5175"
-      - "7011:7011"
+      - "5175:8080"
     networks:
       - app-network
 
@@ -19,3 +18,4 @@ services:
 networks:
   app-network:
     driver: bridge
+
