@@ -3,12 +3,12 @@ version: "3.8"
 services:
   backend:
     build: ./backend
-    image: jmjuangr/todoapp-backend:latest
+    image: jmjuan/todoapp-backend:latest
     ports:
       - "5175:8080"
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
-      ConnectionStrings__SqlServerConnection: "Server=todoappdb.c9sx34w9pbtb.us-east-1.rds.amazonaws.com;Database=TodoAppDB;User Id=root;Password=TU_PASSWORD;"
+      ConnectionStrings__SqlServerConnection: "Server=todoappdb.c9sx34w9pbtb.us-east-1.rds.amazonaws.com;Database=TodoAppDB;User Id=root;Password=123456789;TrustServerCertificate=true"
     depends_on:
       - frontend
     networks:
@@ -16,7 +16,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: jmjuangr/todoapp-frontend:latest
+    image: jmjuan/todoapp-frontend:latest
     ports:
       - "80:80"
     networks:
