@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: todoapp-frontend
+  labels:
+    app: todoapp-frontend
 spec:
   replicas: 1
   selector:
@@ -14,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: jmjuangr/todoapp-frontend:latest
+          image: jmjuangr/todoapp-frontend:latest 
           ports:
             - containerPort: 80

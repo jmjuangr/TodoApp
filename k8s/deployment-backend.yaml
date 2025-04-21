@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: todoapp-backend
+  labels:
+    app: todoapp-backend
 spec:
   replicas: 1
   selector:
@@ -14,6 +16,11 @@ spec:
     spec:
       containers:
         - name: backend
-          image: jmjuangr/todoapp-backend:latest
+          image: jmjuangr/todoapp-backend:latest  
           ports:
             - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
+            - name: ConnectionStrings__SqlServerConnection
+              value: "Server=todoappdb.c9sx34w9pbtb.us-east-1.rds.amazonaws.com;Database=TodoAppDB;User Id=root;Password=123456;"
