@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todoapp-backend-svc
+  labels:
+    app: todoapp-backend
+spec:
+  type: LoadBalancer
+  selector:
+    app: todoapp-backend
+    tier: backend
+  ports:
+    - protocol: TCP
+      port: 80        
+      targetPort: 8080 
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todoapp-backend-deploy
+  labels:
+    app: todoapp-backend
+spec:
+  selector:
+    matchLabels:
+      app: todoapp-backend
+      tier: backend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: todoapp-backend
+        tier: backend
+    spec:
+      containers:
+        - name: todoapp-backend
+          image: jmjuan/todoapp-backend:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
+            - name: ConnectionStrings__SqlServerConnection
+              value: "Server=todoappdb.c9sx34w9pbtb.us-east-1.rds.amazonaws.com;Database=TodoAppDB;User Id=root;Password=123456789;TrustServerCertificate=true;"
